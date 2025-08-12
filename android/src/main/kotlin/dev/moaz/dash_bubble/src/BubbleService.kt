@@ -60,10 +60,10 @@ class BubbleService : FloatingBubbleService() {
         )
 
         val closeIcon = Helpers.getDrawableId(
-            applicationContext,
-            bubbleOptions.closeIcon,
-            R.drawable.ic_close_bubble
-        )
+    applicationContext,
+    bubbleOptions.closeIcon,
+    android.R.drawable.ic_menu_close_clear_cancel // <- ALTERE A LINHA PARA FICAR ASSIM
+)
 
         return FloatingBubble.Builder(this)
             .bubble(
